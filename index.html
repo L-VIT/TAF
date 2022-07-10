@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/jquery.rateyo.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__line">
+            <div class="language-box">
+                <a class="language" href="#">UA</a>
+                <a class="language language--active" href="#">RU</a>
+            </div>
+            <div class="search-box">
+                <input class="search-input" type="text" placeholder="Поиск товара по каталогу">
+            </div>
+            <a class="cabinet" href="#">Личный кабинет</a>
+        </div>
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo-172.png" alt="logo">
+                </a>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <div class="header__item-content menu-btn">
+                            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="16.8472" y="1" width="11.5251" height="11.1116" rx="2" stroke="white" stroke-width="1.8" />
+                                <rect x="1" y="1" width="11.5251" height="11.1116" rx="2" stroke="white" stroke-width="1.8" />
+                                <rect x="1" y="16.2783" width="11.5251" height="11.1116" rx="2" stroke="white" stroke-width="1.8" />
+                                <rect x="16.8472" y="16.2783" width="11.5251" height="11.1116" rx="2" stroke="white" stroke-width="1.8" />
+                            </svg>
+                            <span>Меню</span>
+                        </div>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__item-content contacts" href="#">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.374 16.8797L19.1643 13.67C18.018 12.5236 16.0692 12.9822 15.6107 14.4724C15.2668 15.5041 14.1205 16.0773 13.0888 15.848C10.7961 15.2748 7.70102 12.2944 7.12786 9.88708C6.78396 8.85534 7.47176 7.70901 8.50345 7.36516C9.99368 6.90663 10.4522 4.95787 9.30588 3.81154L6.09616 0.601822C5.1791 -0.200607 3.80351 -0.200607 3.00108 0.601822L0.823054 2.77985C-1.35497 5.0725 1.05232 11.148 6.44006 16.5358C11.8278 21.9235 17.9033 24.4455 20.196 22.1528L22.374 19.9748C23.1765 19.0577 23.1765 17.6821 22.374 16.8797Z"
+                                    fill="#FFFDFD" />
+                            </svg>
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                    <li class="header__list-item header__list-item--max">
+                        <a class="header__item-content favorit" href="#">
+                            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0981 28.7781C15.6489 28.7781 15.2158 28.6154 14.8782 28.3197C13.6034 27.205 12.3744 26.1575 11.29 25.2335L11.2845 25.2287C8.10536 22.5195 5.36006 20.1799 3.44992 17.8751C1.31468 15.2986 0.320129 12.8556 0.320129 10.1869C0.320129 7.59398 1.20923 5.20185 2.82348 3.45085C4.45699 1.67914 6.6984 0.703369 9.13555 0.703369C10.9571 0.703369 12.6253 1.27925 14.0936 2.41489C14.8347 2.98812 15.5064 3.68968 16.0981 4.508C16.6901 3.68968 17.3616 2.98812 18.1029 2.41489C19.5712 1.27925 21.2394 0.703369 23.0609 0.703369C25.4979 0.703369 27.7395 1.67914 29.373 3.45085C30.9873 5.20185 31.8761 7.59398 31.8761 10.1869C31.8761 12.8556 30.8818 15.2986 28.7466 17.8749C26.8364 20.1799 24.0914 22.5193 20.9127 25.2282C19.8264 26.1537 18.5955 27.2029 17.3178 28.3202C16.9805 28.6154 16.5471 28.7781 16.0981 28.7781ZM9.13555 2.55188C7.22084 2.55188 5.46189 3.31603 4.18229 4.70373C2.88367 6.11238 2.16839 8.0596 2.16839 10.1869C2.16839 12.4314 3.0026 14.4388 4.87301 16.6957C6.68083 18.8771 9.3698 21.1686 12.4832 23.822L12.489 23.8268C13.5774 24.7544 14.8113 25.806 16.0955 26.9289C17.3874 25.8039 18.6231 24.7506 19.7138 23.8215C22.8269 21.1681 25.5157 18.8771 27.3235 16.6957C29.1937 14.4388 30.0279 12.4314 30.0279 10.1869C30.0279 8.0596 29.3126 6.11238 28.014 4.70373C26.7346 3.31603 24.9754 2.55188 23.0609 2.55188C21.6583 2.55188 20.3705 2.99775 19.2335 3.87698C18.2201 4.66088 17.5142 5.65182 17.1004 6.34519C16.8876 6.70175 16.5129 6.91457 16.0981 6.91457C15.6833 6.91457 15.3087 6.70175 15.0959 6.34519C14.6823 5.65182 13.9764 4.66088 12.9628 3.87698C11.8257 2.99775 10.5379 2.55188 9.13555 2.55188Z"
+                                    fill="white" />
+                            </svg>
+                            <p class="favorit__num">0</p>
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="basket" href="#">
+                            <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_1949)">
+                                <path d="M0.955551 16.1505C1.5131 15.451 2.34954 15.0497 3.25056 15.0497H11.382L15.7913 4.95323C16.0647 4.32724 16.7938 4.04117 17.4199 4.3147C18.046 4.58808 18.3319 5.31732 18.0584 5.94339L14.0815 15.0498H28.7981L24.8212 5.94339C24.5479 5.31732 24.8337 4.58816 25.4598 4.3147C26.0858 4.04117 26.815 4.32707 27.0884 4.95323L31.4977 15.0498H39.6291C40.5301 15.0498 41.3666 15.451 41.9241 16.1505C42.4715 16.8373 42.6734 17.7202 42.4782 18.573L38.1358 37.5401C37.8326 38.8644 36.661 39.7894 35.2868 39.7894H7.59293C6.21865 39.7894 5.04706 38.8644 4.74384 37.5401L0.401463 18.573C0.206268 17.7201 0.40823 16.8372 0.955551 16.1505ZM7.59293 37.3153H35.2868C35.4968 37.3153 35.6808 37.1776 35.7242 36.9878L40.0666 18.0209C40.1007 17.8721 40.0435 17.7601 39.9894 17.6924C39.9393 17.6294 39.8257 17.5237 39.6291 17.5237H32.5781L32.9021 18.2657C33.1755 18.8918 32.8896 19.6209 32.2636 19.8944C32.1024 19.9648 31.9345 19.9981 31.7692 19.9981C31.2924 19.9981 30.838 19.7208 30.635 19.2559L29.8785 17.5239H13.001L12.2446 19.2559C12.0415 19.7209 11.5871 19.9981 11.1103 19.9981C10.9451 19.9981 10.7771 19.9648 10.6159 19.8944C9.98987 19.621 9.70396 18.8918 9.97741 18.2657L10.3014 17.5237H3.25039C3.05379 17.5237 2.94024 17.6294 2.8901 17.6924C2.83609 17.7602 2.77885 17.8722 2.81291 18.0208L7.15529 36.9879C7.19883 37.1776 7.38289 37.3153 7.59293 37.3153Z" fill="black"/>
+                                <path d="M28.8616 22.8838C29.5447 22.8838 30.0986 23.4376 30.0986 24.1208V33.192C30.0986 33.8751 29.5447 34.4289 28.8616 34.4289C28.1785 34.4289 27.6246 33.8751 27.6246 33.192V24.1208C27.6246 23.4376 28.1784 22.8838 28.8616 22.8838Z" fill="black"/>
+                                <path d="M21.4397 22.8838C22.1229 22.8838 22.6767 23.4376 22.6767 24.1208V33.192C22.6767 33.8751 22.1229 34.4289 21.4397 34.4289C20.7566 34.4289 20.2027 33.8751 20.2027 33.192V24.1208C20.2027 23.4376 20.7566 22.8838 21.4397 22.8838Z" fill="black"/>
+                                <path d="M14.0178 22.8838C14.701 22.8838 15.2548 23.4376 15.2548 24.1208V33.192C15.2548 33.8751 14.701 34.4289 14.0178 34.4289C13.3347 34.4289 12.7809 33.8751 12.7809 33.192V24.1208C12.781 23.4376 13.3347 22.8838 14.0178 22.8838Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_1949">
+                                <rect width="42.2222" height="42.2222" fill="white" transform="matrix(-1 0 0 1 42.5509 0.888916)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            <p class="basket__num">17</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <div class="banner__slider">
+                    <div class="banner__slider-item">
+                        <img class="banner__slider-img" src="images/banner-img.jpg" alt="">
+                    </div>
+                    <div class="banner__slider-item">
+                        <img class="banner__slider-img" src="images/banner-img2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="categories__title section-title">Категории</h2>
+            <div class="categories__inner">
+                <a class="categories__item" href="#">
+                    <p class="categories__item-text">Слабосолёная рыба и морепродукти</p>
+                </a>
+                <a class="categories__item" href="#">
+                    <p class="categories__item-text">Рыба холодного копчения</p>
+                </a>
+                <a class="categories__item" href="#">
+                    <p class="categories__item-text">Рыба горячего копчения</p>
+                </a>
+                <a class="categories__item" href="#">
+                    <p class="categories__item-text">Вяленная рыба</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotions">
+        <div class="container">
+            <h2 class="promotions__title section-title">Акции</h2>
+            <div class="promotions__inner">
+                <div class="promotions__slider slider">
+
+                    <div class="product-card slider__item">
+                        <div class="discount-box discount">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-1.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Мідії мариновані в олії з лимоном</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="3"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card slider__item">
+                        <div class="discount-box">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit favorit-active"></button>
+                        <img class="product-card__img" src="images/prod-2.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Шматочки сьомги слабосолені</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="3"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+                    <div class="product-card slider__item">
+                        <div class="discount-box">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-3.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Філе оселедця в томатному соусі</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="4"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+                    <div class="product-card slider__item">
+                        <div class="discount-box discount">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-4.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Обрізь сьомги в маринаді</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="3"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+<!-- ########################## -->
+                    <div class="product-card slider__item">
+                        <div class="discount-box discount">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-1.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Мідії мариновані в олії з лимоном</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="3"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+                    <div class="product-card slider__item">
+                        <div class="discount-box">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-2.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Шматочки сьомги слабосолені</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="3"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+                    <div class="product-card slider__item">
+                        <div class="discount-box">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-3.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Філе оселедця в томатному соусі</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="4"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+                    <div class="product-card slider__item">
+                        <div class="discount-box discount">
+                            <p class="discount__amount">-53 грн</p>
+                            <p class="discount__persent">-20%</p>
+                        </div>
+                        <button class="product-card__favorit"></button>
+                        <img class="product-card__img" src="images/prod-4.jpg" alt="product">
+                        <p class="product-card__availability">Есть в наличии</p>
+                        <p class="product-card__name">Обрізь сьомги в маринаді</p>
+                        <div class="product-card__rate-box">
+                            <div class="product-card__rate" data-rateyo-rating="3"></div>
+                            <a class="product-card__coment" href="#">0</a>
+                        </div>
+                        <div class="product-card__buy-box">
+                            <div class="product-card__price-box">
+                                <p class="product-card__old-price">243 UAH</p>
+                                <p class="product-card__new-price">189.9 UAH</p>
+                            </div>
+                            <a class="product-card__buy-link" href="#">Купить</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
