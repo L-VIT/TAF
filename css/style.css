@@ -39,6 +39,7 @@ section{
     max-width: 1187px;
     padding: 0 15px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header{
@@ -267,7 +268,7 @@ section{
     max-height: 347px;
 }
 
-.banner__slider-img{
+.slick-list.draggable{
     border-radius: 15px;
 }
 
@@ -355,10 +356,10 @@ section{
 }
 
 .product-card:hover{
-    -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  transition: all .3s;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: all .3s;
 }
 
 .discount-box{
@@ -507,4 +508,317 @@ section{
 .product-card__buy-link:active{
     background-color: #04d400;
     color: #FFFFFF;
+}
+
+.slider-btn{
+    position: absolute;
+    top: -95px;
+    right: 54px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slider-btnprev{
+    right: 100px;
+}
+
+.reviews__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__item{
+    max-width: 360px;
+}
+
+.reviews__rating-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviews__rating-num{
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 112px;
+}
+
+.reviews__rate .jq-ry-group svg{
+    width: 30px;
+    height: 30px;
+}
+
+.reviews__rate{
+    margin-bottom: 5px;
+}
+
+.reviews__num-of-comments{
+    color: #C4C4C4;
+}
+
+.reviews__create,
+.recipes__all{
+    display: inline-block;
+    padding: 11px 29px;
+    font-weight: 500;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    transition: all .3s;
+}
+
+.reviews__create:hover,
+.recipes__all:hover{
+    background-color: #c4c0c0;
+}
+
+.reviews__comment-title-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__comment-mark.jq-ry-container{
+    width: 150px !important;
+}
+
+.reviews__comment-name{
+    font-weight: 700;
+    margin-bottom: 3px; 
+}
+
+.reviews__comment-date{
+    color: #C4C4C4;
+    margin-bottom: 10px;
+}
+
+.recipes__all{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.recipes__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipes__item{
+    padding: 48px 47px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 360px;
+    width: 360px;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+.recipes__item:nth-child(1){
+    background-image: url(../images/recipes-1.jpg);
+}
+
+.recipes__item:nth-child(2){
+    background-image: url(../images/recipes-2.jpg);
+}
+
+.recipes__item:nth-child(3){
+    background-image: url(../images/recipes-3.jpg);
+}
+
+.recipes__item-sub-title{
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 3px;
+}
+
+.recipes__item-title{
+    flex: 1 1 auto;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.recipes__item-link{
+    display: inline-block;
+    color: #FEFEFE;
+    font-weight: 500;
+    padding: 11px 21px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.recipes__item-link:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about__card-box{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+
+.about__card{
+    max-width: 260px;
+    width: 100%;
+    padding: 30px 10px 10px;
+    background-color: #ebebec;
+    border-radius: 10px;
+    transition: all .3s;
+    height: 120px;
+}
+
+.about__card:hover{
+    background-color: #d7d7d8;
+}
+
+.about__card-title{
+    text-align: center;
+    color: #528FD5;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.about__card-text{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.about__text-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__text-link{
+    padding-top: 22px;
+    padding-bottom: 12px;
+}
+
+.about__text-link-item{
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 11px 20px;
+    border: 1px solid #528FD5;
+    background-color: #528FD5;
+    border-radius: 100px;
+}
+
+.foter{
+    background-color: #333333;
+    color: #A0A0A0;
+    padding: 90px 0;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title{
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.footer-list li + li{
+    margin-top: 10px;
+}
+
+.contacts__list-item-link,
+.contacts__list-item-span{
+    padding-left: 40px;
+    position: relative;
+}
+
+.contacts__list-item-link::after,
+.contacts__list-item-span::after{
+    background-repeat: no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.link-vodafone::after{
+    background-image: url(../images/icons/vodafone.svg);
+}
+
+.link-ks::after{
+    background-image: url(../images/icons/ks.svg);
+}
+
+.link-life::after{
+    background-image: url(../images/icons/life.svg);
+}
+
+.link-email::after{
+    background-image: url(../images/icons/email.svg);
+}
+
+.contacts__list-item-span::after{
+    background-image: url(../images/icons/address.svg);
+}
+
+.schedule__list-item{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.info__list{
+    padding-bottom: 45px;
+    border-bottom: 1px solid #595959;
+    margin-bottom: 40px;
+}
+
+.info__social-link + .info__social-link{
+    margin-left: 20px;
+}
+
+footer li a:hover{
+    color: #FFFFFF;
+}
+
+footer li a{
+    transition: all .3s;
+}
+
+.link-vodafone:hover::after{
+    background-image: url(../images/icons/vodafone-white.svg);
+}
+
+.link-ks:hover::after{
+    background-image: url(../images/icons/ks-white.svg);
+}
+
+.link-life:hover::after{
+    background-image: url(../images/icons/life-white.svg);
+}
+
+.link-email:hover::after{
+    background-image: url(../images/icons/email-white.svg);
+}
+
+.info__social-link:hover path{
+    fill: #FFFFFF;
 }
