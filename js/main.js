@@ -34,4 +34,13 @@ $(function(){
         nextArrow: '<button class="slider-btn slider-btnnext"><img src="images/icons/arrow-right.svg" alt=""></button>',
     });
 
+    $('.menu-btn').on('click', function(){
+        $('.popup').addClass('popup--active');
+    });
+
+    $('.close').on('click', function(){
+        $('.popup--active').removeClass('popup--active');
+    });
+
+
 });

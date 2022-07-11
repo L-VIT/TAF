@@ -1,0 +1,138 @@
+@media(max-width: 1300px){
+    .header__line{
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 920px){
+    .search-box {
+        max-width: 290px;
+    }
+}
+
+@media(max-width: 840px){
+    .menu-btn{
+        margin-right: 20px;
+    }
+    .header__list {
+        margin-left: 180px;
+    }
+}
+
+@media(max-width: 750px){
+    .logo {
+        top: -36px;
+    }
+    .logo__img{
+        width: 120px;
+        height: 120px;
+    }
+    .header__list {
+        margin-left: 0px;
+    }
+    .language-box{
+        display: none;
+    }
+    .search-input{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 9px 25px 8px 9px;
+    }
+    .search-box::after {
+        background-image: url(../images/icons/search.svg);
+        background-size: cover;
+        width: 12px;
+        height: 12px;
+        top: 10px;
+        right: 9px;
+    }
+    .header__list,
+    .header__item-content{
+        height: 40px;
+    }
+    .header__list-item--max{
+        flex: 0 0;
+        margin-right: 20px;
+    }
+    .header__line{
+        padding: 5px 20px;
+    }
+    .basket{
+        padding: 1px 34px;
+        max-height: 40px;
+    }
+    .basket::after{
+        width: 60px;
+        height: 60px;
+        top: -7px;
+        right: 26px;
+    }
+    .basket__num {
+        bottom: -10px;
+        right: 17px;
+    }
+    .header__list{
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 650px){
+    .header__list-item:first-child{
+        position: absolute;
+        top: 98px;
+        left: -10px;
+    }
+    .header__list{
+        justify-content: flex-end;
+    }
+    .search-input{
+        padding: 11px 25px 11px 9px;
+    }
+    .search-box{
+        position: absolute;
+        top: 126px;
+        right: 0px;
+        max-width: 220px;
+    }
+    .logo{
+        top: -26px;
+    }
+    .logo__img{
+        width: 110px;
+        height: 110px;
+    }
+    body{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .cabinet{
+        width: 150px;
+    }
+    .cabinet::before{
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 550px){
+    .contacts span{
+        display: none;
+    }
+    .header{
+        height: 190px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 410px){
+    .menu-btn span{
+        display: none;
+    }
+    .contacts{
+        display: none;
+    }
+    .header__list-item--max{
+        margin-right: 10px;
+    }
+}
