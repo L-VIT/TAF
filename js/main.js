@@ -42,5 +42,9 @@ $(function(){
         $('.popup--active').removeClass('popup--active');
     });
 
+    $('.menu-catalog').on('click', function(){
+        $('.menu-catalog__list').slideToggle(500);
+        $('.menu-catalog').toggleClass('drop--active');
+    });
 
 });
