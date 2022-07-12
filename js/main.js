@@ -30,8 +30,29 @@ $(function(){
         infinite: true,
         arrows: true,
         slidesToShow: 4,
+        slidesToScroll: 1,
         prevArrow: '<button class="slider-btn slider-btnprev"><img src="images/icons/arrow-left.svg" alt=""></button>',
         nextArrow: '<button class="slider-btn slider-btnnext"><img src="images/icons/arrow-right.svg" alt=""></button>',
+        responsive: [
+            {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 860,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 385,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
     });
 
     $('.menu-btn').on('click', function(){

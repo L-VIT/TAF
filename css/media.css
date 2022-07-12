@@ -2,12 +2,71 @@
     .header__line{
         justify-content: flex-end;
     }
+    .slider {
+        margin-right: 0px;
+    }
+}
+
+@media(max-width: 1200px){
+    .about__inner {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+    .about__card-box,
+    .about__text-box{
+        width: 70%;
+    }
+    .about__card {
+        max-width: 350px;
+    }
+}
+
+@media(max-width: 1120px){
+    .categories__item {
+        width: 195px;
+        height: 195px;
+        background-size: cover !important;
+    }
+    .reviews__comment:last-child{
+        display: none;
+    }
+    .reviews__inner {
+        justify-content: flex-start;
+    }
+    .about__card {
+        max-width: 290px;
+    }
+}
+
+@media(max-width: 1000px){
+    .recipes__item {
+        padding: 15px;
+        height: 280px;
+        max-width: 33.3%;
+        border-radius: 15px;
+        color: #FFFFFF;
+        background-size: cover;
+    }
+    .about__card-box{
+        gap: 20px;
+    }
 }
 
 @media(max-width: 920px){
     .search-box {
-        max-width: 290px;
+        max-width: 280px;
     }
+    .about__card-box,
+    .about__text-box{
+        width: 100%;
+        justify-content: space-around
+    }
+    .about__card {
+        max-width: 350px;
+    }
+    
 }
 
 @media(max-width: 840px){
@@ -16,6 +75,18 @@
     }
     .header__list {
         margin-left: 180px;
+    }
+    .categories__inner{
+        flex-wrap: wrap;
+        gap: 22px;
+        justify-content: space-around;
+    }
+    .categories__item {
+        width: 260px;
+        height: 260px;
+    }
+    .about__card {
+        max-width: 320px;
     }
 }
 
@@ -74,6 +145,35 @@
     .header__list{
         justify-content: flex-end;
     }
+    .slick-dots{
+        margin-top: 10px;
+    }
+    .banner,
+    section{
+        margin-bottom: 40px;
+    }
+    .section-title{
+        margin-bottom: 30px;
+    }
+    .slider-btn{
+        top: -70px;
+    }
+    .about__card {
+        max-width: 260px;
+    }
+}
+
+@media(max-width: 700px){
+    .recipes__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipes__item{
+        padding: 48px 47px 60px;
+        height: 360px;
+        width: 360px;
+        max-width: 360px;
+    }
 }
 
 @media(max-width: 650px){
@@ -113,6 +213,49 @@
         height: 16px;
         background-size: cover;
     }
+    .categories__item {
+        width: 230px;
+        height: 230px;
+    }
+    .product-card__coment{
+        display: none;
+    }
+    .product-card__buy-box{
+        display: block;
+    }
+    .product-card__price-box{
+        margin-bottom: 15px;
+    }
+    .product-card__img{
+        width: 150px;
+        height: 150px;
+    }
+    .product-card__name{
+        margin-bottom: 15px;
+    }
+    .product-card{
+        height: 460px;
+    }
+    .product-card__buy-link{
+        display: block;
+        text-align: center;
+    }
+    .discount{
+        display: none;
+    }
+    .reviews__comment:last-child{
+        display: block;
+    }
+    .reviews__inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .reviews__comment{
+        max-width: 100%;
+    }
+    .about__card {
+        max-width: 240px;
+    }
 }
 
 @media(max-width: 550px){
@@ -122,6 +265,52 @@
     .header{
         height: 190px;
         margin-bottom: 40px;
+    }
+    .slick-dots button{
+        height: 10px;
+        width: 10px;
+    }
+    .slick-dots{
+        gap: 10px;
+    }
+    .categories__item {
+        width: 170px;
+        height: 170px;
+    }
+    .categories__item-text{
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 150px;
+    }
+    .section-title{
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .slider-btn img{
+        width: 9px;
+        height: 15px;
+    }
+    .slider-btn {
+        top: -40px;
+    }
+    .slider-btnprev {
+        right: 80px;
+    }
+    .logo__img {
+        width: 100px;
+        height: 100px;
+    }
+    .recipes__item{
+        height: 300px;
+        width: 300px;
+        max-width: 300px;
+    }
+    .recipes__all {
+        top: -8px;
+    }
+    .about__card {
+        max-width: 90%;
     }
 }
 
@@ -134,5 +323,30 @@
     }
     .header__list-item--max{
         margin-right: 10px;
+    }
+    .categories__item {
+        width: 133px;
+        height: 133px;
+    }
+    .categories__inner {
+        gap: 7px;
+        justify-content: space-between;
+    }
+    .categories__item-text{
+        max-width: 120px;
+    }
+    .recipes__item{
+        height: 270px;
+        width: 270px;
+        max-width: 270px;
+    }
+    .reviews__comment-mark{
+        display: none;
+    }
+    .reviews__rating-num{
+        font-size: 60px;
+    }
+    .reviews__rating-box{
+        justify-content: start;
     }
 }
