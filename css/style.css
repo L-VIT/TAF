@@ -1074,3 +1074,11 @@ footer li a{
 .menu__languge--active{
     color: #000000;
 }
+
+.no-scrol{
+    overflow: hidden;
+}
+
+.scrol{
+    overflow: auto;
+}

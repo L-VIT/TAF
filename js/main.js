@@ -56,14 +56,30 @@ $(function(){
     });
 
     $('.menu-btn').on('click', function(){
+      //відкриття меню
         $('.popup').addClass('popup--active');
+        $('.popup').addClass('scrol');
+        $('body').addClass('no-scrol');
     });
 
     $('.close').on('click', function(){
+      //закриття меню по кліку на кнопку
         $('.popup--active').removeClass('popup--active');
+        $('.popup').removeClass('scrol');
+        $('body').removeClass('no-scrol');
+    });
+
+    $('.popup__body').on('click', function () {
+      //закриття меню по кліку в пусте місце
+      if (!event.target.closest('.popup__content')) {
+        $('.popup--active').removeClass('popup--active');
+        $('.popup').removeClass('scrol');
+        $('body').removeClass('no-scrol');
+      }
     });
 
     $('.menu-catalog').on('click', function(){
+      //випадаючий список в меню
         $('.menu-catalog__list').slideToggle(500);
         $('.menu-catalog').toggleClass('drop--active');
     });
